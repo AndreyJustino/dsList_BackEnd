@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Objects;
 
-@Entity
+@Entity(name = "tb_game_list")
 @Data
 @Builder
 @AllArgsConstructor
