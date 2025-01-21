@@ -1,5 +1,6 @@
 package com.andreyjustino.dslist.dto;
 
+import com.andreyjustino.dslist.projections.GameMinProjection;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,4 +20,12 @@ public class GamesMinDto {
     private String imgUrl;
 
     private String shortDescription;
+
+    public GamesMinDto(GameMinProjection object){
+        id = object.getId();
+        title = object.getTitle();
+        year = object.getYear();
+        imgUrl = object.getImgUrl();;
+        shortDescription = object.getShortDescription();
+    }
 }
