@@ -4,7 +4,7 @@ public interface GameMinProjection { //apenas metodos getters para aquela consul
 
     Long getId();
     String getTitle();
-    Integer getYear();
+    Integer getGameYear();
     String getImgUrl();
     String getShortDescription();
     Integer getPosition();
