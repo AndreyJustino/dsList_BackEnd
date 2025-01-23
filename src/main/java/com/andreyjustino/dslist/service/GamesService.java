@@ -55,7 +55,6 @@ public class GamesService {
     public List<GamesMinDto> findListId(Long listId){
         List<GameMinProjection> result = this.gameListRepository.searchByList(listId);
 
-
         return result.stream().map(value -> new GamesMinDto(value)).toList();
     }
 }
